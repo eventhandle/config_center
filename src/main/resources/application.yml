@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config_center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/eventhandle/springstudy.git
+          search-paths: /SpringCloudConfig
+      label: master
+      username: eventhandle@163.com
+      password: Amtb2045*
+eureka:
+  client:
+    eureka-server-url:
+      default-zone: http://192.168.4.175:9000/eureka/
+
